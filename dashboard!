@@ -1,23 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <style>
-        
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DASHBOARD</title>
+	<style>
+			h1{
+				text-align: center;
+				font-size: 40px;
+			}
+button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {width: 200px; height: 60px}
 
-        h1 {
-            color: #333;
-        }
-    </style>
+
+		</style>
 </head>
-
 <body>
-
-    <h1>Welcome to the Dashboard!</h1>
-
+	<h1>Welcome to dashboard!<br>
+	<h1>Here i will post my all projects</h1>
+	<table border="0" width="100%" height="50px">
+		<tr>
+			<th> <a href="#">
+                 <button class="button1">PROJECT 1</button>
+            </th>
+            <th> <a href="#">
+		         <button class="button1">PROJECT 2</button>
+		    </th>
+		    <th>
+		    	 <a href="#">
+		         <button class="button1">PROJECT 3</button>
+		    </th>
+  
+	
 </body>
-
 </html>
