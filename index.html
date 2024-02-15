@@ -1,88 +1,110 @@
 <!DOCTYPE html>
-<html>
 <head>
-  <style>
-* {
-    cursor: none
+        <title>NIKKU</title>
+      <link rel="shortcut icon" href="nikku_logo.png" type="image/x-icon">
+        <style>
+        body{
+  background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
 }
-body {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}   
-.loading {
-    background-color: #FFF;
-    display: fixed
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 40px
 }
-.loading img {
-    display: block;
-    min-height: 209px;
-    min-width: 200px;
-}
-.mouse {
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    background-color: #fff782;
-    position: absolute;
-    animation: mouseAnimation .5s infinite ease-in-out alternate;
-    left: 0;
-    top: 0
-}
-@keyframes mouseAnimation {
-    from {
-        width: 25px;
-        height: 25px
-    }
-    to {
-        width: 15px;
-        height: 15px
-    }   
-}
-  </style>
-  </head>
-<body>
-  <div class="loading">
-    <img src="http://a.top4top.net/p_1990j031.gif" alt="Loading">
-  </div>
-  <div class="mouse original"></div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-          $(".loading").height($(window).height());
-$(".loading").width($(window).width()); 
-$(".loading img").css({
-    paddingTop: ($(".loading").height() - $(".loading img").height()) / 2,
-    paddingLeft: ($(".loading").width() - $(".loading img").width()) / 2
-});
-$(window).resize(function () {
-    "use strict";
-    $(".loading").height($(window).height());
-    $(".loading").width($(window).width());
-    $(".loading img").css({
-        paddingTop: ($(".loading").height() - $(".loading img").height()) / 2,
-        paddingLeft: ($(".loading").width() - $(".loading img").width()) / 2
-    }); 
-});
-$(window).mousemove(function (e) {
-    "use strict";
-    $(".original").css({
-        left: e.pageX - 16,
-        top: e.pageY - 16
-    }); 
-});
-$("body").on("click", function (e) {
-    "use strict";
-    $(".original").clone(true).appendTo("body").css({
-        left: e.pageX - 16,
-        top: e.pageY - 16
-    }).removeClass("original"); 
-});
 
-// Redirect to another webpage after 3 seconds (3000 milliseconds)
-setTimeout(function() {
-    window.location.href = "Homepage.html"; // Replace with the URL of the webpage you want to open
-}, 7000);
-        </script>
+.button1 {width: 350px; height: 100px}
+h6{
+        font-size: 150px
+}
+</style>
+</head>
+<body> 
+  
+<table border="0" width="100%" height="700px">
+<!----Row1---->
+<tr>
+<th></th>
+<th></th>
+<th> <a href="https://www.mediafire.com/file/tb13nlid3d32l8f/com.mojang.minecraftpe-1.20.51.01-free.apk/file/">
+  <button class="button button1">Minecraft</button>   </a>
+ </th>
+<th> <a href="about me.html">
+<button class="button button1">About Me</button>
+</a>
+</th>
+<th> <a href="https://t.me/+_xPQMw8NjyJiMDBl">
+<button class="button button1">Contact us</button>
+</a>
+</th>
+</tr>
+
+<!----Row2---->
+<tr>
+<th colspan="6">
+<font color="#04AA6D" face="Helvetica" size="50">
+<h6><i>Welcome to<br>our<br>website</i></h6> <br>
+<a href="science.html">
+    <button class="button button1">Science Books</button><br>
+<a href="Sign in.html">
+  <button class="button button1">Sign in</button><br>
+  <br>
+  <br>
+  <br>
+  <br>
+</font>
+</th>
+</tr>
+
+<table border="0" width="100%" height="5px">
+  <tr>
+
+    <th> <a href="Tic Tac Toe with ai/tic tac toe with ai.html">
+        <button class="button button1">Ai TicTacToe</button>
+    </th>
+
+    <th> <a href="math calculator.html"">
+        <button class="button button1">CALCULATOR</button>
+    </th>
+
+    <th> <a href="Sidecup Family Golf.html">
+      <button class="button button1">Sidecup Family Golf</button>
+    </th>
+  </tr>
+
+
+<!----Row4---->
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+
+<!----Row6---->
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+</table>
+
+
+    
 </body>
 </html>
